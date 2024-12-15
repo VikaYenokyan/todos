@@ -1,0 +1,23 @@
+mixin task(mods)
+  -
+    const baseName = 'task'
+    let allMods = ''
+    if (typeof mods !== 'undefined' && mods) {
+      const modsList = mods.split(',')
+      for (const element of modsList) {
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+      }
+      allMods = allMods.trim()
+    }
+
+  template#tmpl
+    .task__inner 
+      label
+        input.task__checkbox(name='checkbox' type='checkbox')
+        i.task__i
+      input.task__input(type='text' readonly='')
+      .task__actions 
+        button.task__edit
+          img(src="images/edit.svg")
+        button.task__delete
+          img(src="images/delete.svg")

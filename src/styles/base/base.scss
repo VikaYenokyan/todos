@@ -6,4 +6,24 @@ body {
   &.overflow-scroll {
     overflow: hidden;
   }
+
+  font-family: 'Courier New',
+  Courier,
+  monospace;
+  background-color: $bodyColor;
+}
+
+header {
+  padding: rem(64px) rem(16px) 0;
+  margin: 0 auto;
+}
+
+main {
+  &.todos {
+    flex: 1 1 0%;
+    max-width: rem(800px);
+    padding-bottom: 140px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }

@@ -17,11 +17,11 @@
 // @import '../../node_modules/swiper/swiper-bundle.min.css';
 
 @import 'base/reset';
+@import 'utils/variables';
 @import './config';
 @import 'base/fonts';
 @import 'base/core';
 @import 'base/base';
-@import 'utils/variables';
 @import 'base/media';
 @import './components/**/*';
 @import '../layout/layout';

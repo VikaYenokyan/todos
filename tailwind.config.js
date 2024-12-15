@@ -3,6 +3,7 @@ import plugin from 'tailwindcss/plugin'
 export default {
   content: ['./src/**/*.{pug,js,ts,jsx,tsx}'],
   theme: {
+    darkMode: 'selector',
     extend: {
       transitionTimingFunction: {
         DEFAULT: 'cubic-bezier(0.33, 1, 0.68, 1)'

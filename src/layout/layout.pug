@@ -12,11 +12,10 @@ html(lang='ru')
       meta(name='theme-color', content='#4285f4')
       link(href='https://vitejs.dev/logo.svg', rel='icon', type='image/x-icon')
   body(data-barba='wrapper')
-    .wrapper
-      block header
-        include ../pug/blocks/header/header
-      block content
-      block footer
-        include ../pug/blocks/footer/footer
+    block header
+      include ../pug/blocks/header/header
+    block content
+    block footer
+      include ../pug/blocks/footer/footer
     block scripts
       script(type='module', src='../../js/index.js')

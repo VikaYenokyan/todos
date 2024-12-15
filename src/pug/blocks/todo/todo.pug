@@ -1,0 +1,25 @@
+mixin todo(mods)
+  -
+    const baseName = 'todo'
+    let allMods = ''
+    if (typeof mods !== 'undefined' && mods) {
+      const modsList = mods.split(',')
+      for (const element of modsList) {
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+      }
+      allMods = allMods.trim()
+    }
+
+  .todo(class=allMods)&attributes(attributes)
+    h1.todo__title todos
+    section.todo__list
+      form.todo__form
+        input.todo__input(type="text", placeholder="What needs to be done?")
+        input.todo__submit.task__add(type="image", src="images/add.svg")
+      .todo__tasks
+    button.todo-theme 
+      img(src="images/moon.svg")
+    h2.todo__index Количество посещений на сайте&nbsp;
+      span.todo__counter 0
+    +task
+        

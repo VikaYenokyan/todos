@@ -11,6 +11,9 @@ import cssDebug from './libs/css-debug/css-debug'
 import { lenisInit } from './libs/lenis/lenis'
 import { scrollBarWidth } from './utils/scrollbarWidth'
 import { initSlideFunction } from './utils/slideFunction'
+import todo from '../pug/blocks/todo/todo'
+import todoTheme from '../pug/blocks/todo/theme'
+import sessionIndex from '../pug/blocks/todo/sessionIndex'
 
 window.addEventListener('load', scrollBarWidth, false)
 window.addEventListener('resize', scrollBarWidth, false)
@@ -22,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 export const commonFunction = () => {
   // libs config
   config()
-  cssDebug(true)
+  // cssDebug(true)
   initSlideFunction()
 
   // libs
@@ -34,4 +37,7 @@ export const commonFunction = () => {
 
   //Form
   validateFormInit()
+  todo()
+  todoTheme()
+  sessionIndex()
 }

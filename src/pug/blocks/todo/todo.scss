@@ -1,0 +1,59 @@
+.todo {
+  &__title {
+    font-size: rem(112px);
+    font-weight: 300;
+    color: #baabab;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    background-color: $inputBg;
+    align-items: center;
+    padding-right: rem(16px);
+  }
+
+  &__input {
+    flex: 1 1 0%;
+    background-color: $inputBg;
+    padding: rem(16px);
+    margin-right: rem(16px);
+    font-size: rem(20px);
+    color: $inputColor;
+  }
+
+  &__submit {
+    width: 100%;
+    height: rem(30px);
+    width: rem(30px);
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &__list {
+    box-shadow: 5px 5px 5px $listBg;
+  }
+
+  &-theme {
+    position: fixed;
+    bottom: rem(100px);
+    right: rem(100px);
+
+    .dark {
+      display: none;
+    }
+  }
+
+  &__index {
+    position: fixed;
+    bottom: rem(100px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

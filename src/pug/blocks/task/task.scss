@@ -1,0 +1,127 @@
+.task {
+  background-color: $inputBg;
+  padding: rem(16px) 0 rem(16px) rem(16px);
+  border-top: 2px solid $borderTop;
+
+  &__input {
+    background: transparent;
+  }
+
+  &__edit {
+    opacity: 0.2;
+    height: rem(40px);
+    width: rem(40px);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__delete {
+    opacity: 0.2;
+    height: rem(40px);
+    width: rem(40px);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__save {
+    opacity: 0.2;
+    height: rem(40px);
+    width: rem(40px);
+    cursor: pointer;
+    margin: 0 rem(8px);
+    transition: 0.4s;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      opacity: 0.4;
+    }
+  }
+
+  &__add {
+    opacity: 0.2;
+    height: rem(40px);
+    width: rem(40px);
+    transition: 0.4s;
+  }
+
+  &__inner {
+    display: flex;
+
+    .task__input {
+      font-size: rem(18px);
+      width: 100%;
+      display: block;
+      transition: 0.4s;
+      margin-left: rem(16px);;
+      color: $inputColor;
+
+    }
+
+    label {
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+      color: black;
+    }
+  }
+
+  &__actions {
+    display: flex;
+
+    button {
+      cursor: pointer;
+      margin: 0 rem(8px);;
+      transition: 0.4s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  #checkbox {
+    &::before {
+      border-radius: 50%;
+    }
+  }
+
+  &__i {
+    transition: 0.4s;
+    border: 1px solid #baa4a4;
+    border-radius: 50%;
+    height: 1.4285714286rem;
+    width: 1.4285714286rem;
+    display: inline-block;
+    position: relative;
+    top: rem(8px);
+    left: 0;
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: -9999px;
+
+    &:checked {
+      + {
+        .task__i {
+          background: url(../images/checkmark.svg) no-repeat 50% 50%;
+          background-size: rem(23px);
+          background-color: #fff;
+          border-color:  #baa4a4;
+        }
+      }
+    }
+  }
+}

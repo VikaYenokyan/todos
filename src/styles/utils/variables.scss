@@ -9,6 +9,23 @@
   --black: #0c0c0c;
   // colors
   --background1: #f2f2f2;
+
+  --bodyColor: #faf5f5;
+  --inputBg: #fff;
+  --inputColor: dimgray;
+  --imageColor: #000000;
+  --listBg: #baabab;
+  --borderTop: #ebe4e4;
+
+}
+
+body.dark {
+  --bodyColor: #585151;
+  --inputBg: #433b3b;
+  --inputColor: #fff;
+  --imageColor: #fff;
+  --listBg: #2b2727;
+  --borderTop: #2b2727;
 }
 
 // fonts
@@ -30,3 +47,10 @@ $colors: (
 $mediaWidthLaptop: 1340px;
 $mediaWidthTablet: 767px;
 $mediaWidthMobile: 320px;
+
+$bodyColor: var(--bodyColor);
+$inputBg: var(--inputBg);
+$inputColor: var(--inputColor);
+$imageColor: var(--imageColor);
+$listBg: var(--listBg);
+$borderTop: var(--borderTop);
