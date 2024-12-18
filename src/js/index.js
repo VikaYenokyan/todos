@@ -15,6 +15,7 @@ import todo from '../pug/blocks/todo/todo'
 import todoTheme from '../pug/blocks/todo/theme'
 import sessionIndex from '../pug/blocks/todo/sessionIndex'
 import promiseInit from '../pug/blocks/promise/promise'
+import fetchInit from '../pug/blocks/fetchBlock/fetchBlock'
 
 window.addEventListener('load', scrollBarWidth, false)
 window.addEventListener('resize', scrollBarWidth, false)
@@ -41,5 +42,6 @@ export const commonFunction = () => {
   // todo()
   // todoTheme()
   // sessionIndex()
-  promiseInit()
+  // promiseInit()
+  fetchInit()
 }
