@@ -14,6 +14,7 @@ import { initSlideFunction } from './utils/slideFunction'
 import todo from '../pug/blocks/todo/todo'
 import todoTheme from '../pug/blocks/todo/theme'
 import sessionIndex from '../pug/blocks/todo/sessionIndex'
+import promiseInit from '../pug/blocks/promise/promise'
 
 window.addEventListener('load', scrollBarWidth, false)
 window.addEventListener('resize', scrollBarWidth, false)
@@ -37,7 +38,8 @@ export const commonFunction = () => {
 
   //Form
   validateFormInit()
-  todo()
-  todoTheme()
-  sessionIndex()
+  // todo()
+  // todoTheme()
+  // sessionIndex()
+  promiseInit()
 }
